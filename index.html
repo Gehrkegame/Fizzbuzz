@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>FizzBuzz</title>
+  </head>
+  <body>
+    <div id="output"></div>
+    <script>
+      const output = document.getElementById('output');
+      for (let i = 1; i <= 100; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+          output.innerHTML += '<p>FizzBuzz</p>';
+        } else if (i % 3 === 0) {
+          output.innerHTML += '<p>Fizz</p>';
+        } else if (i % 5 === 0) {
+          output.innerHTML += '<p>Buzz</p>';
+        } else {
+          output.innerHTML += '<p>' + i + '</p>';
+        }
+      }
+    </script>
+  </body>
+</html>
